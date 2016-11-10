@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_press_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/white"
+    tools:context="com.example.queenabergen.electronicpresskit.PressPage">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/press_banner"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/pressbanner" />
+
+    <TextView
+        android:id="@+id/blackline"
+        android:layout_below="@+id/press_banner"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/black"/>
+        <ImageView
+            android:id="@+id/article_one"
+            android:layout_below="@+id/blackline"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:src="@drawable/optimizedarticle1"/>
+    <TextView
+        android:id="@+id/blackline2"
+        android:layout_below="@+id/article_one"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/black"/>
+    <ImageView
+        android:id="@+id/article_two"
+        android:layout_below="@+id/blackline2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/optimizedarticle2"/>
+    <TextView
+        android:id="@+id/blackline3"
+        android:layout_below="@+id/article_two"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/black"/>
+</RelativeLayout>
+</ScrollView>

@@ -1,65 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@color/black"
     tools:context="com.example.queenabergen.electronicpresskit.MainActivity">
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bennie Bates"
-        android:textColor="@color/white"
-        android:textSize="45sp"
-        android:fontFamily="sans-serif-condensed"
+    <ImageView
         android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed"
+        android:src="@drawable/benniebatestext"
+        android:textSize="45sp" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/activity_horizontal_margin"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Electronic Press Kit"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:textColorHighlight="@color/white"
-        android:textSize="35dp"
-        android:fontFamily="cursive"
         android:id="@+id/textView2"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Powered by CueCode"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="cursive"
+        android:text="Electronic Press Kit"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="@color/white"
-        android:textSize="20sp"
-        android:id="@+id/textView3"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
 
     <ImageView
+        android:id="@+id/cuelogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/bennie_image"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/poweredbycuecode" />
+
+
+    <ImageView
+        android:id="@+id/bennie_image"
         android:layout_width="250dp"
-        android:layout_height="270dp"
-        android:src="@drawable/benniebates"
+        android:layout_height="240dp"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:background="@color/black"
         android:backgroundTint="@color/red"
         android:cropToPadding="true"
         android:foregroundTint="@color/white"
-        android:id="@+id/imageView"
-        android:background="@color/black"
+        android:src="@drawable/benniebates" />
+
+    <ImageView
+        android:id="@+id/enter_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cuelogo"
         android:layout_centerHorizontal="true"
-        android:layout_alignEnd="@+id/textView2"
-        android:layout_below="@+id/textView2" />
+        android:layout_marginBottom="20dp"
+        android:background="@color/black"
+        android:onClick="nextPage"
+        app:srcCompat="@drawable/enterbutton" />
+
 
 </RelativeLayout>
